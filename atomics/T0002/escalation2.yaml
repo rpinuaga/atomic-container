@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: escalation2-pod
+  labels:
+    app: escalation2
+spec:
+  containers:
+  - name: escalation2
+    image: ubuntu
+    command: ["/bin/bash"]
+    args: ["-c", "echo ESCALATION_TEST >> /host/authorized_keys; sleep 3600"]
+    securityContext:
+      privileged: true
+      capabilities:
+        add:
+          - ALL
+    volumeMounts:
+    - name: host-ssh
+      mountPath: /host/authorized_keys
+  volumes:
+  - name: host-ssh
+    hostPath:
+      path: /home/ec2-user/.ssh/authorized_keys
+      
