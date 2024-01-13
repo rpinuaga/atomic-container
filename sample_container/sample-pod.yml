@@ -5,6 +5,7 @@ metadata:
   labels:
     app: escapetest
 spec:
+  # hostPID: true
   containers:
   - name: escapetest
     image: ubuntu:latest

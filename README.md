@@ -15,6 +15,7 @@ Library of security tests focused on Container escape attacks. Security teams ca
 * T0007 - CAP_SYS_PTRACE + HostPID exposed
 * T0008 - /proc/sys/kernel/core_pattern exposed
 * T0009 - /var/log mount + symlink
+* T0010 - CAP_NET_ADMIN
 
 Each test includes:
 - A check.sh script which verifies if the environment is vulnerable to the attack
