@@ -9,7 +9,7 @@ spec:
   - name: escalation2
     image: ubuntu
     command: ["/bin/bash"]
-    args: ["-c", "echo ESCALATION_TEST >> /host/authorized_keys; sleep 3600"]
+    args: ["-c", "touch /host-root/tmp/escalation-test-hostpath.txt; echo ESCALATION_TEST >> /host/authorized_keys; sleep 3600"]
     securityContext:
       privileged: true
       capabilities:
@@ -18,8 +18,13 @@ spec:
     volumeMounts:
     - name: host-ssh
       mountPath: /host/authorized_keys
+    - name: host-root
+      mountPath: /host-root
   volumes:
   - name: host-ssh
     hostPath:
       path: /home/ec2-user/.ssh/authorized_keys
+  - name: host-root
+    hostPath:
+      path: /
       

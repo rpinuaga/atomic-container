@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: escapetest-pod
+  labels:
+    app: escapetest
+spec:
+  containers:
+  - name: escapetest
+    image: ubuntu:latest
+    command: [ "/bin/bash", "-c", "--" ]
+    args: [ "while true; do sleep 60; done;" ]
+    securityContext:
+      privileged: true
+      capabilities:
+        add:
+          - ALL
