@@ -1,5 +1,5 @@
 #!/bin/sh
-apt update; apt install fdisk
+apt update; apt install -y fdisk
 device=`fdisk -l | grep filesystem | awk '{print $1}' | head -1`
 mkdir /mnt/host_home
 mount $device /mnt/host_home
