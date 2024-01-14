@@ -2,7 +2,7 @@
 ------------------
 ramon.pinuaga@skyscanner.net
 
-Library of security tests focused on Container escape attacks. Security teams can use these tests to quickly reproduce potential attacks and probe their detection capabilities.
+Library of security tests/PoCs focused on Container escape attacks. Security teams can use these tests to quickly reproduce potential attacks and probe their detection capabilities.
 
 ## Tests
 
@@ -29,4 +29,3 @@ You can try the different tests in the included sample container:
 - cd sample_container
 - kubectl create -f sample-pod.yml
 - kubectl exec --stdin --tty escapetest-pod -- bash
-
