@@ -16,6 +16,8 @@ Library of security tests/PoCs focused on Container escape attacks. Security tea
 * T0008 - /proc/sys/kernel/core_pattern exposed
 * T0009 - /var/log mount + symlink
 * T0010 - CAP_NET_ADMIN
+* T0011 - /var/run/containerd/containerd.sock exposed
+* T0012 - /sys/kernel/uevent_helper exposed
 
 Each test includes:
 - A check.sh script which verifies if the environment is vulnerable to the attack
