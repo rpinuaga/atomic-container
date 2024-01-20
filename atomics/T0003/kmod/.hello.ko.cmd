@@ -1,0 +1,1 @@
+cmd_/home/user/Desktop/atomic-container/atomics/T0003/kmod/hello.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/user/Desktop/atomic-container/atomics/T0003/kmod/hello.ko /home/user/Desktop/atomic-container/atomics/T0003/kmod/hello.o /home/user/Desktop/atomic-container/atomics/T0003/kmod/hello.mod.o;  true
