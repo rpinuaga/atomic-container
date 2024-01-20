@@ -1,1 +1,0 @@
-cmd_/home/user/Desktop/atomic-container/atomics/T0003/kmod/hello.mod := printf '%s\n'   hello.o | awk '!x[$$0]++ { print("/home/user/Desktop/atomic-container/atomics/T0003/kmod/"$$0) }' > /home/user/Desktop/atomic-container/atomics/T0003/kmod/hello.mod

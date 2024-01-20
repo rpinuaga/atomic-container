@@ -1,1 +1,0 @@
-cmd_/home/user/Desktop/atomic-container/atomics/T0003/kmod/modules.order := {   echo /home/user/Desktop/atomic-container/atomics/T0003/kmod/hello.o; :; } > /home/user/Desktop/atomic-container/atomics/T0003/kmod/modules.order

@@ -1,1 +1,0 @@
-cmd_/home/user/Desktop/atomic-container/atomics/T0003/kmod/Module.symvers :=  scripts/mod/modpost -m -a     -o /home/user/Desktop/atomic-container/atomics/T0003/kmod/Module.symvers -T /home/user/Desktop/atomic-container/atomics/T0003/kmod/modules.order -i Module.symvers -e 
