@@ -1,6 +1,5 @@
 # Atomic Container
 ------------------
-ramon.pinuaga@skyscanner.net
 
 Library of security tests/PoCs focused on Container escape attacks. Security teams can use these tests to quickly reproduce potential attacks and probe their detection capabilities.
 
