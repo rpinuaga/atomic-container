@@ -1,7 +1,7 @@
 # Atomic Container
 ------------------
 
-Library of security tests/PoCs focused on Container escape attacks. Security teams can use these tests to quickly reproduce potential attacks and probe their detection capabilities.
+Library of security tests/PoCs focused on Container escape/breakout attacks. Security teams can use these tests to quickly reproduce potential attacks and probe their detection capabilities.
 
 ## Tests
 
@@ -17,6 +17,8 @@ Library of security tests/PoCs focused on Container escape attacks. Security tea
 * T0010 - CAP_NET_ADMIN
 * T0011 - /var/run/containerd/containerd.sock exposed
 * T0012 - /sys/kernel/uevent_helper exposed
+* T0013 - CVE-2024-21626 (Leaky Vessels)
+* T0014 - Kubelet exposed
 
 Each test includes:
 - A check.sh script which verifies if the environment is vulnerable to the attack
@@ -24,7 +26,7 @@ Each test includes:
 
 ## Sample container
 
-These test were created to run on a Kubernetes host, however depending on your specific Kubernetes configuration some of them may not fully work.
+These test were created initially to run on a Kubernetes host, however depending on your specific Kubernetes configuration some of them may not fully work.
 
 You can try the different tests in the included sample container:
 - cd sample_container
