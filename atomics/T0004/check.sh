@@ -1,5 +1,6 @@
 #!/bin/sh
-apt update; apt install -qq libcap2-bin util-linux
+echo "Instaling dependencies: "
+apt update -qq; apt install -qq -y libcap2-bin util-linux
 echo "Container running as root: "
 id
 echo "CAP_SYS_ADMIN capability: "
