@@ -1,9 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: cve202421616
-  labels:
-    app: escapetest
+  name: cve202421626
 spec:
   containers:
   - name: ubuntu
