@@ -1,5 +1,5 @@
 #!/bin/sh
-apt update; apt install -y libcap2-bin
+apt update; apt install -qq libcap2-bin
 echo "Container running as root: "
 id
 echo "/sys/kernel/uevent_helper exposed in the container: "
