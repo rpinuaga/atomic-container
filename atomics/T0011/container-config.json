@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "name": "ubuntu"
+  },
+  "image":{
+    "image": "ubuntu"
+  },
+  "command": [
+    "top"
+  ],
+  "log_path":"ubuntu.log",
+  "linux": {
+  }
+}
