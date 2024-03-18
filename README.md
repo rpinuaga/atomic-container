@@ -19,6 +19,8 @@ Library of security tests/PoCs focused on Container escape/breakout attacks. Sec
 * T0012 - /sys/kernel/uevent_helper exposed
 * T0013 - CVE-2024-21626 (Leaky Vessels)
 * T0014 - Kubelet exposed
+* T0015 - /proc/sys/fs/binfmt_misc/ exposed
+* T0016 - eBPF
 
 Each test includes:
 - A check.sh script which verifies if the environment is vulnerable to the attack
