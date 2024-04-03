@@ -15,7 +15,7 @@ Library of security tests/PoCs focused on Container escape/breakout attacks. Sec
 * T0008 - /proc/sys/kernel/core_pattern exposed
 * T0009 - /var/log mount + symlink
 * T0010 - CAP_NET_ADMIN
-* T0011 - /var/run/containerd/containerd.sock exposed
+* T0011 - /run/containerd/containerd.sock exposed
 * T0012 - /sys/kernel/uevent_helper exposed
 * T0013 - CVE-2024-21626 (Leaky Vessels)
 * T0014 - Kubelet exposed
