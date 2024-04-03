@@ -6,4 +6,4 @@ id
 echo "CAP_SYS_ADMIN capability: "
 capsh --print | grep cap_sys_admin
 echo "/proc/sys/fs/binfmt_misc/ exposed"
-ls -al /proc/sys/fs/binfmt_misc/
+ls -al /proc/sys/fs/binfmt_misc/register
