@@ -21,6 +21,7 @@ Library of security tests/PoCs focused on Container escape/breakout attacks. Sec
 * T0014 - Kubelet exposed
 * T0015 - /proc/sys/fs/binfmt_misc/ exposed
 * T0016 - eBPF
+* T0017 - shareProcessNamespace: true
 
 Each test includes:
 - A check.sh script which verifies if the environment is vulnerable to the attack
